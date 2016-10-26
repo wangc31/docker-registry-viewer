@@ -1,0 +1,8 @@
+<title>Docker Registry for {{ registry_info }}</title>
+
+<h1>Docker Registry of {{ registry_info }}</h1>
+
+<pre>Repository</pre><hr/>
+{% for repository in repositories %}
+    <a href="/{{ repository }}/">{{ repository }}</a><br>
+{% endfor %}

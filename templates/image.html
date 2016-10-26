@@ -1,0 +1,23 @@
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+
+<h1>{{ image_name }}:{{ image_tag }}</h1>
+<a href="{{ parent }}">../</a>
+
+<pre>
+<table>
+    <tr>
+        <th>Image Name</th>
+        <th>Tag</th>
+        <th>Pull Command</th>
+    </tr>
+    <tr>
+        <td>{{ image_name }}</td>
+        <td>{{ image_tag }}</td>
+        <td>docker pull {{ registry_host }}/{{ image_name }}:{{ image_tag }}</td>
+    </tr>
+</table>
+</pre>

@@ -1,0 +1,8 @@
+<h1> {{ repository_name }} </h1>
+
+<pre>
+<a href="{{ parent }}">../</a>
+<pre>Tag</pre><hr/>
+{% for tag in repository_tags %}<a href="/{{ repository_name }}/:{{ tag }}">{{ tag }}</a>
+{% endfor %}
+</pre>
