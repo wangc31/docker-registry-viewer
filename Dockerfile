@@ -1,4 +1,4 @@
-FROM python
+FROM python:alpine
 MAINTAINER Chen Wang "Chen.Wang@emc.com"
 COPY . /app
 WORKDIR /app
